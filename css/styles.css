@@ -212,7 +212,7 @@ img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   margin: 0 auto;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-screen-btn:hover,
 .main-screen-btn:focus {
@@ -309,6 +309,7 @@ img {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--White);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-descr {
   font-size: 16px;
@@ -325,7 +326,7 @@ img {
   gap: 24px;
 }
 
-.social-links .link {
+.team-social .link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,12 +337,12 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-links .link:hover,
-.social-links .link:focus {
+.team-social .link:hover,
+.team-social .link:focus {
   background-color: var(--Ocean);
 }
 
-.social-links .social-icon {
+.team-social .social-icon {
   fill: var(--Cloud);
 }
 
@@ -354,6 +355,7 @@ img {
 
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-box {
@@ -379,8 +381,6 @@ img {
 
 .portfolio-list-item:hover .portfolio-overlay {
   transform: translateY(0);
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-name {
@@ -410,9 +410,11 @@ img {
 .footer-row {
   display: flex;
   flex-direction: row;
-  gap: 120px;
+  align-items: baseline
 }
-
+.footer-content{
+  margin-right: 120px;
+}
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -445,12 +447,12 @@ img {
   margin-bottom: 16px;
 }
 
-.social-links.footer-links {
+.team-social.footer-links {
   gap: 16px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-links.footer-links .link:hover,
-.social-links.footer-links .link:focus {
+.team-social.footer-links .link:hover,
+.team-social.footer-links .link:focus {
   background-color: var(--Green);
 }
